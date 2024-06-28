@@ -7,4 +7,5 @@ spring:
       password: nacos
       discovery:
         server-addr: 101.201.42.112:8848
-        namespace: qiyu-live-test
+        namespace: e62304fb-8195-465b-a71d-e411516cb021
+        connect-timeout: 3000

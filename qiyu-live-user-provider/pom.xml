@@ -6,8 +6,10 @@
         <artifactId>qiyu-live-app</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <groupId>org.example</groupId>
+
+
     <artifactId>qiyu-live-user-provider</artifactId>
+
     <properties>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -25,12 +27,6 @@
         <maven.compiler.compilerVersion>17</maven.compiler.compilerVersion
         >
     </properties>
-    <repositories>
-        <repository>
-            <id>central</id>
-            <url>https://repo.maven.apache.org/maven2</url>
-        </repository>
-    </repositories>
     <dependencies>
         <dependency>
             <groupId>org.apache.dubbo</groupId>
@@ -41,6 +37,10 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.alibaba.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -56,25 +56,6 @@
             <artifactId>qiyu-live-user-interface</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-<!--            <version>8.0.28</version>-->
-            <version>5.1.49</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.shardingsphere</groupId>
-            <artifactId>shardingsphere-jdbc-core</artifactId>
-            <version>5.3.2</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.5.3</version>
-        </dependency>
-
     </dependencies>
     <build>
         <plugins>
@@ -87,4 +68,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
