@@ -3,19 +3,16 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.idea</groupId>
-        <artifactId>qiyu-live-app</artifactId>
+        <artifactId>qiyu-live-framework</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>qiyu-live-api</artifactId>
+
+    <artifactId>qiyu-live-framework-redis-starter</artifactId>
+
     <dependencies>
         <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-spring-boot-starter</artifactId>
-            <version>3.2.0-beta.3</version>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -28,13 +25,13 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>org.idea</groupId>
-            <artifactId>qiyu-live-user-interface</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>jakarta.annotation</groupId>
+            <artifactId>jakarta.annotation-api</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot</artifactId>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 </project>
